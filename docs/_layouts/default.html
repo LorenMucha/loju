@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'DE' }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
+  </head>
+  <body>
+    {% include navbar.html %} 
+    {% include header.html %}
+     {% include infos.html %}
+    {% include ablauf.html %} 
+    {% include rueckmeldung.html %} 
+    {% include footer.html %}
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

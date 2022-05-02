@@ -1,0 +1,16 @@
+  <nav class="navbar navbar-expand-sm fixed-top navbar-light mt-5" id="navbar">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav border">
+                {% for item in site.data.navbar %}
+              <li class="nav-item active border border-white">
+                  <a class="nav-link text-white px-5" href="#{{item.link}}">{{ item.name }}</a> 
+              </li>
+              {% endfor %}  
+            </ul>
+        </div>
+    </div>
+</nav>  
