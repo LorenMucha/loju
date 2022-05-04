@@ -1,15 +1,29 @@
+# site settings
+title: "Willkommen"
+subtitle: Hochzeit von Julia und Loren
+mail: youremailaddress@gmail.com
+description: Zu unserer Hochzeit
+baseurl: "/loju" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address: Bei der Liebethaler Kirche 2–4
+city: Pirna
+zip_code: 01796
+adress_name: Jugendgästehaus Liebethal
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+
+# build settings
+markdown: kramdown
+
 sass:
-  sass_dir: assets/css
+  style: compressed
 
-plugins:
-  - jekyll-autoprefixer
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-title: "Wilkommen" # the name of your site, e.g. ACME Corp.
-tagline: "An awesome tagline"
-email: "your.email@gmail.com"
-description: >- # this means to ignore newlines until "baseurl:"
-author: name
-url: "lorenmucha.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/loju"
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 

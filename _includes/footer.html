@@ -1,5 +1,57 @@
-<!-- JS -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/f/xbjwpbwd" method="POST">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Nachricht</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Senden" class="special" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Addresse</h3>
+					<span>
+					{% if site.adress_name %}
+					    {{ site.adress_name }}<br />
+					{% endif %}
+					{% if site.street_address %}
+					    {{ site.street_address }}<br />
+					{% endif %}
+					{% if site.zip_code %}
+					    {{ site.zip_code }}
+					{% endif %}
+					{% if site.city %}
+					    {{ site.city }},
+					{% endif %}
+					</span>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+</div>
+
+<!-- Scripts -->
+	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
+	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
+	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
