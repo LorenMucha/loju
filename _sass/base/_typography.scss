@@ -10,7 +10,7 @@
 		color: _palette(fg);
 		font-family: _font(family);
 		font-size: 17pt;
-		font-weight: _font(weight);
+		font-weight: _font(weight) !important;
 		letter-spacing: _font(letter-spacing);
 		line-height: 1.65;
 
