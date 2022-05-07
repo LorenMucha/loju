@@ -12,6 +12,16 @@
 		}
 	}
 
+	.list-group-item {
+		background-color: rgba(255, 255, 255, 0.1);
+		border: none;
+	}
+
+	.bg-secondary {
+		background-color: rgb(255, 255, 255) !important;
+		color: black;
+	}
+
 	header {
 		&.major {
 			width: -moz-max-content;
@@ -67,4 +77,5 @@
 				}
 			}
 		}
+
 	}

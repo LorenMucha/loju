@@ -47,7 +47,7 @@
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
+		color: _palette(fg);
 		font-weight: _font(weight-bold);
 	}
 
@@ -56,7 +56,8 @@
 	}
 
 	p {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 0 0;
+		padding-top: 4px;
 	}
 
 	blockquote > p {
@@ -67,7 +68,7 @@
 		color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
 		line-height: 1.65;
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		margin: (_size(element-margin) * 0.5) 0 (_size(element-margin) * 0.5) 0;
 
 		a {
 			color: inherit;
@@ -95,7 +96,7 @@
 		font-size: 0.9em;
 	}
 
-	h6 {
+	h6, label {
 		font-size: 0.7em;
 	}
 
